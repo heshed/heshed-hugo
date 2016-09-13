@@ -31,7 +31,13 @@ hugo new about.md
 hugo undraft content/about.md
 
 # 
-echo grace/public >> ../.gitignore
+git submodule add https://github.com/heshed/heshed.github.io.git public
 
 echo "User-agent: *\nDisallow:" > static/robots.txt
+```
+
+# deploy to https://heshed.github.io
+
+```bash
+sh deploy.sh
 ```
