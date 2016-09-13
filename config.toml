@@ -1,0 +1,73 @@
+# Site settings
+baseurl = "http://heshed.github.io/"
+languageCode = "en-us"
+title = "Heshed - "
+theme = "Hugo-Octopress"
+builddrafts = false
+
+# Enter your tracking code to enable Google Analytics
+# googleAnalytics = "UA-XXXXXXXX-Y"
+
+contentdir = "content"
+datadir = "data"
+layoutdir = "layouts"
+publishdir = "public"
+
+canonifyurls = true
+SectionPagesMenu = "main"
+
+highlightTheme = "solarized_dark"
+paginate = 6
+
+[[menu.sidebar]]
+    Name = "GitHub"
+    URL = "https://github.com/heshed"
+    weight = 0
+
+[[menu.sidebar]]
+    Name = "Facebook"
+    URL = "https://www.facebook.com/heshed"
+    weight = 1
+
+[indexes]
+    author = "authors"
+    category = "categories"
+    tag = "tags"
+    series = "series"
+
+[taxonomies]
+    author = "authors"
+    category = "categories"
+    tag = "tags"
+    series = "series"
+
+[params]
+    truncate = true
+    subtitle = "Heshed Heshed"
+    # customCSS = ["css/custom.css", "css/custom-font.css"]
+
+    # disqusShortname = "UA-82835198-1"
+    rss = true
+    textrss = true
+
+    sidebarHeader = "sidebar header"
+    sidebarText = "sidebarText"
+    sidebarRecentLimit = "5"
+    sidebarMenuEnabled = true
+    sidebarMenuHeader = "sidebar Menu Header"
+    sidebarNewWindow  = true
+
+    highlightTheme = "darcula"
+    searchEngineURL = "https://www.google.com/search"
+    continueReadingText = "more.."
+
+    bitbucket = ""
+    twitter = "https://twitter.com/binaa1/"
+    keybase = ""
+    stackoverflow = ""
+    linkedin = ""
+    googleplus = ""
+    youtube = ""
+    github = "https://github.com/heshed"
+    facebook = "https://www.facebook.com/heshed"
+
