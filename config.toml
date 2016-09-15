@@ -1,7 +1,7 @@
 # Site settings
 baseurl = "https://heshed.github.io/"
 languageCode = "en-us"
-title = "Heshed - "
+title = "Heshed - Salva"
 theme = "Hugo-Octopress"
 builddrafts = false
 
@@ -29,12 +29,6 @@ paginate = 6
     URL = "https://www.facebook.com/heshed"
     weight = 1
 
-[indexes]
-    author = "authors"
-    category = "categories"
-    tag = "tags"
-    series = "series"
-
 [taxonomies]
     author = "authors"
     category = "categories"
@@ -46,28 +40,30 @@ paginate = 6
     subtitle = "Heshed Heshed"
     # customCSS = ["css/custom.css", "css/custom-font.css"]
 
-    # disqusShortname = "UA-82835198-1"
+    disqusShortname = "timo-boll-github"
     rss = true
     textrss = true
 
-    sidebarHeader = "sidebar header"
-    sidebarText = "sidebarText"
+    sidebarHeader = ""
+    sidebarText = "programming, Golang"
     sidebarRecentLimit = "5"
     sidebarMenuEnabled = true
-    sidebarMenuHeader = "sidebar Menu Header"
+    sidebarMenuHeader = ""
     sidebarNewWindow  = true
 
-    highlightTheme = "darcula"
+    highlightTheme = "solarized_dark"
     searchEngineURL = "https://www.google.com/search"
     continueReadingText = "more.."
 
     bitbucket = ""
-    twitter = "https://twitter.com/binaa1/"
+    twitter = ""
     keybase = ""
     stackoverflow = ""
     linkedin = ""
     googleplus = ""
     youtube = ""
     github = "https://github.com/heshed"
-    facebook = "https://www.facebook.com/heshed"
+    facebook = ""
 
+    tableOfContents = true
+    generateTaxonomyList = true

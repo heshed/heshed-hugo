@@ -9,26 +9,23 @@ heshed.github.io
 
 ```bash
 # install hugo
-brew instal hugo
+brew install hugo
 
 # create hugo site
-hugo new site grace
+hugo new site heshed.github.io
 
 # install theme
-cd grace/themes
-git clone https://github.com/aerohub/hugrid
-git clone https://github.com/jnjosh/internet-weblog.git
+cd themes
 git clone https://github.com/parsiya/Hugo-Octopress.git
 
 cd ../..
-echo grace/themes > .gitignore
+echo themes > .gitignore
 
 # create first post
-cd grace
 hugo new about.md
 
 # undraft
-hugo undraft content/about.md
+hugo undraft post/about.md
 
 # 
 git submodule add https://github.com/heshed/heshed.github.io.git public
