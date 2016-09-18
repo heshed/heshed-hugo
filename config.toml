@@ -25,8 +25,8 @@ paginate = 6
     weight = 0
 
 [[menu.sidebar]]
-    Name = "Facebook"
-    URL = "https://www.facebook.com/heshed"
+    Name = "old blog"
+    URL = "http://tech-heshed.tumblr.com/"
     weight = 1
 
 [taxonomies]
