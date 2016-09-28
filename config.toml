@@ -40,6 +40,8 @@ paginate = 6
     subtitle = "Heshed Heshed"
     # customCSS = ["css/custom.css", "css/custom-font.css"]
 
+    googleAnalytics = "UA-84863059-1"
+
     disqusShortname = "timo-boll-github"
     rss = true
     textrss = true
