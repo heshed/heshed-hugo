@@ -1,14 +1,26 @@
 +++
+date = "2016-10-16T01:03:50+09:00"
 title = "Reducing boilerplate with go generate"
+tags = [
+  "golang",
+  "read",
+  "번역",
+]
+categories = [
+  "category",
+]
+authors = [
+  "Timo Boll",
+]
+series = [
+  "Advent 2015"
+]
 draft = false
-date = "2016-10-15T21:50:13+09:00"
-series = ["Advent 2015"]
-tags = ["golang", "read", "번역"]
-authors = ["Timo Boll"]
+toc = false
 +++
 
-> [Reducing boilerplate with go generate](https://blog.gopheracademy.com/advent-2015/reducing-boilerplate-with-go-generate/)
-를 번역한 글입니다
+
+> [Reducing boilerplate with go generate][original-blog-url] 를 번역한 글입니다
 
 Go는 대단한 언어입니다. 단순하고, 파워풀하며, 훌륭한 도구들을 가지고 있고, 우리 중 많은 
 이들은 매일 사용하는 것을 즐깁니다. 하지만 강한 타입의 언어들에서 일상적으로 발생하게 되는, 이것저것을 연결하기 위해서
@@ -22,7 +34,7 @@ Go는 대단한 언어입니다. 단순하고, 파워풀하며, 훌륭한 도구
 
 # boilerplate를 줄이기 위해 코드 생성을 사용하는 이유는 무엇입니까?
 
-때때로 우리는 replection을 쓰고 `interface{}`를 받아들이는 메서드들을 프로젝트에 채움으로 boilerplate를 줄이려고 노력합니다.
+때때로 우리는 reflection을 쓰고 `interface{}`를 받아들이는 메서드들을 프로젝트에 채움으로 boilerplate를 줄이려고 노력합니다.
 그러나 메서드가 `interface{}`를 받아들일 때마다, 우리는 type 안정성을 창밖으로 던져버립니다.
 type assertions와 reflection을 사용할 때, 컴파일러는 우리가 올바른 타입들을 패싱하는지 확인할 수 없으며, 런타임 panic에 더욱 노출됩니다.
 
@@ -130,6 +142,7 @@ func (f *File) Close() error {
 인터페이스들이 암시적으로 만족하기 때문에, 의존성들을 인터페이스들을 이용하여 특정화 할 수 있으며, 유닛 테스팅 중에 외부 의존성보다는 mock을 사용할 수 있습니다.
 
 Here's a very simplified example about how to mock a theoretical downcaser interface:
+
 이론적인 downcaser 인터페이스를 mock 하는 방법에 대한 매우 간단한 예제:
 
 ```go
@@ -265,3 +278,4 @@ composition][mockery-issue] 같은 버그가 나타났습니다.
 [goautomock]: https://github.com/ernesto-jimenez/gogen/tree/master/cmd/goautomock/main.go
 [gounmarshalmap]: https://github.com/ernesto-jimenez/gogen/tree/master/cmd/gounmarshalmap
 [gospecific]: https://github.com/ernesto-jimenez/gogen/tree/master/cmd/gospecific
+[original-blog-url]: https://blog.gopheracademy.com/advent-2015/reducing-boilerplate-with-go-generate/
