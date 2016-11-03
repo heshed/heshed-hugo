@@ -10,9 +10,14 @@ authors = ["Timo Boll"]
 
 # Golang 리소스 모음
 
+## static analysis
+
+* [dingo-hunter - Static analyser for finding Deadlocks in Go](https://github.com/nickng/dingo-hunter)
+
 ## performance
 
 * [Writing High Performance Go](http://go-talks.appspot.com/github.com/davecheney/presentations/writing-high-performance-go.slide)
+* [bombardier - Fast crossplatform HTTP benchmarking tool written in Go](https://github.com/codesenberg/bombardier)
 
 ### http trace
 
@@ -38,6 +43,7 @@ authors = ["Timo Boll"]
 
 * [mimir - Generates minimal embedded database from structs in golang](https://github.com/microo8/mimir)
   * using [leveldb](https://github.com/syndtr/goleveldb)
+* [noms - The versioned, forkable, syncable database](https://github.com/attic-labs/noms)
 
 ## vision
 
@@ -71,3 +77,8 @@ authors = ["Timo Boll"]
 ## distributed computation
 
 * [Glow is an easy-to-use distributed computation system](https://github.com/chrislusf/glow)
+
+## cross compile
+
+* [gox - A dead simple, no frills Go cross compile tool](https://github.com/mitchellh/gox)
+* [goxc - a build tool for Go, with a focus on cross-compiling, packaging and deployment](https://github.com/laher/goxc)
